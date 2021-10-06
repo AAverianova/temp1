@@ -18,7 +18,7 @@ class Point():
 	
 class Triangle():
     def __init__(self, a, b, c):
-        self.side1=float(toFixed(sqrt((b.x-a.x)**2+(b.y-a.y)**2), accuracy))
+        self.side1=a.dist(b)
         self.side2=float(toFixed(sqrt((c.x-b.x)**2+(c.y-b.y)**2), accuracy))
         self.side3=float(toFixed(sqrt((a.x-c.x)**2+(a.y-c.y)**2), accuracy))
         self.corner1=a
