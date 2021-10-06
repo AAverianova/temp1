@@ -13,7 +13,9 @@ class Point():
     def vyvod(self):
         print("("+str(self.x)+", "+str(self.y)+")")
         pass
-
+	def dist(self, a):
+		return float(toFixed(sqrt((self.x-a.x)**2+(self.y-a.y)**2), accuracy))
+	
 class Triangle():
     def __init__(self, a, b, c):
         self.side1=float(toFixed(sqrt((b.x-a.x)**2+(b.y-a.y)**2), accuracy))
